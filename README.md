@@ -72,19 +72,15 @@ Após executar o comando de ativação, o nome do seu ambiente virtual (normalme
 
 Se você nunca instalou as dependências do projeto, ou se está começando a configurar o ambiente, basta rodar o seguinte comando:
 
-    ```
     pip install -r requirements.txt
-    ```
-
+    
 Isso irá instalar todas as bibliotecas e pacotes necessários para o seu projeto.
 
 ### 4. **Executar o Projeto**
 
 Com o ambiente virtual ativado e as dependências instaladas, execute o seu código Python com:
 
-    ```
     python projeto1.py
-    ```
 
 Isso irá rodar o programa conforme o que está no arquivo `projeto1.py`.
 
@@ -92,8 +88,6 @@ Isso irá rodar o programa conforme o que está no arquivo `projeto1.py`.
 
 Após terminar de trabalhar com o projeto, você pode desativar o ambiente virtual com o comando:
 
-    ```
     deactivate
-    ```
 
 Isso irá sair do ambiente virtual e retornar ao terminal normal.
