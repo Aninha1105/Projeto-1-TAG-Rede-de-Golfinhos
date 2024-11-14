@@ -28,9 +28,7 @@ Este projeto foi desenvolvido em Python 3.9.6 e utiliza as seguintes bibliotecas
 - Abra o terminal.
 - Navegue até a pasta onde o projeto está localizado:
     
-    ```
     cd /caminho/para/o/projeto
-    ```
     
 
 ### 2. Configurar e **Ativar o Ambiente Virtual**
