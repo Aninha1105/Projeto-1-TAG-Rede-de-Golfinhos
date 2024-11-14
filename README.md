@@ -28,7 +28,7 @@ Este projeto foi desenvolvido em Python 3.9.6 e utiliza as seguintes bibliotecas
 - Abra o terminal.
 - Navegue até a pasta onde o projeto está localizado:
     
-    ```bash
+    ```
     cd /caminho/para/o/projeto
     ```
     
@@ -41,7 +41,7 @@ O projeto utiliza um ambiente virtual para garantir que as dependências e pacot
 
 - Para criar o ambiente virtual, execute o seguinte comando no terminal:
     
-    ```bash
+    ```
     python3 -m venv venv
     ```
     
@@ -52,7 +52,7 @@ Esse comando cria uma pasta chamada `venv` com todos os arquivos necessários 
 
 - Ative o ambiente virtual com o seguinte comando:
     
-    ```bash
+    ```
     source venv/bin/activate
     ```
     
@@ -61,7 +61,7 @@ Esse comando cria uma pasta chamada `venv` com todos os arquivos necessários 
 
 - Ative o ambiente virtual com o comando:
     
-    ```bash
+    ```
     venv\Scripts\activate
     ```
     
@@ -72,7 +72,7 @@ Após executar o comando de ativação, o nome do seu ambiente virtual (normalme
 
 Se você nunca instalou as dependências do projeto, ou se está começando a configurar o ambiente, basta rodar o seguinte comando:
 
-    ```bash
+    ```
     pip install -r requirements.txt
     ```
 
@@ -82,7 +82,7 @@ Isso irá instalar todas as bibliotecas e pacotes necessários para o seu projet
 
 Com o ambiente virtual ativado e as dependências instaladas, execute o seu código Python com:
 
-    ```bash
+    ```
     python projeto1.py
     ```
 
@@ -92,7 +92,7 @@ Isso irá rodar o programa conforme o que está no arquivo `projeto1.py`.
 
 Após terminar de trabalhar com o projeto, você pode desativar o ambiente virtual com o comando:
 
-    ```bash
+    ```
     deactivate
     ```
 
