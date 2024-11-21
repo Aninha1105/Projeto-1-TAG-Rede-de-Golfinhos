@@ -98,4 +98,5 @@ Este projeto explorou diversas funcionalidades para analisar e visualizar uma re
 1. O cálculo do grau de cada vértice e dos coeficientes de aglomeração, oferecendo uma análise detalhada das conexões e agrupamentos no grafo.
 2. A identificação e exibição de todos os cliques maximais, fornecendo uma visão clara dos subconjuntos completamente conectados na rede.
 3. A geração de um GIF animado, cliques.gif, que permite a visualização sequencial dos cliques maximais no grafo. Essa funcionalidade facilita a interpretação visual das estruturas do grafo e suas inter-relações.
+
 A partir do projeto foi possível realizar estudos mais aprofundados sobre grafos e suas aplicações em redes complexas. Além disso, a inclusão de visualizações interativas agrega valor ao entendimento dos dados analisados.
