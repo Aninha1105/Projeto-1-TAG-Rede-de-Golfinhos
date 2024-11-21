@@ -91,3 +91,11 @@ Após terminar de trabalhar com o projeto, você pode desativar o ambiente virtu
     deactivate
 
 Isso irá sair do ambiente virtual e retornar ao terminal normal.
+
+## Conclusão
+
+Este projeto explorou diversas funcionalidades para analisar e visualizar uma rede social de golfinhos, representada como um grafo não direcionado. Entre as principais realizações, destacam-se:
+1. O cálculo do grau de cada vértice e dos coeficientes de aglomeração, oferecendo uma análise detalhada das conexões e agrupamentos no grafo.
+2. A identificação e exibição de todos os cliques maximais, fornecendo uma visão clara dos subconjuntos completamente conectados na rede.
+3. A geração de um GIF animado, cliques.gif, que permite a visualização sequencial dos cliques maximais no grafo. Essa funcionalidade facilita a interpretação visual das estruturas do grafo e suas inter-relações.
+A partir do projeto foi possível realizar estudos mais aprofundados sobre grafos e suas aplicações em redes complexas. Além disso, a inclusão de visualizações interativas agrega valor ao entendimento dos dados analisados.
