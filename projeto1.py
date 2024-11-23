@@ -135,7 +135,7 @@ n, arestas = ler_arquivo_mtx(arquivo_mtx)
 G = nx.Graph()
 G.add_edges_from(arestas)
 
-pos = nx.spring_layout(G)
+pos = nx.kamada_kawai_layout(G)
 
 print("Projeto 1 de Teoria e Aplicação de Grafos - Rede de Golfinhos")
 print()
