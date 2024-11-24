@@ -19,7 +19,8 @@ Este projeto foi desenvolvido em Python 3.9.6 e utiliza as seguintes bibliotecas
 - `numpy` para operações numéricas.
 - `imageio.v2` para criação de um GIF que destaca visualmente os cliques maximais.
 - `os` para manipulação de diretórios e arquivos.
-- `scipy`: para operações matemáticas e científicas avançadas.
+- `scipy` para operações matemáticas e científicas avançadas.
+- `tempfile` para criar diretórios e arquivos temporários de maneira segura e portátil.
 
 ## Como Executar o Projeto
 
@@ -74,7 +75,7 @@ Se você nunca instalou as dependências do projeto, ou se está começando a co
 
     pip install -r requirements.txt
     
-Isso irá instalar todas as bibliotecas e pacotes necessários para o seu projeto.
+Isso irá instalar todas as bibliotecas e pacotes necessários para o projeto.
 
 ### 4. **Executar o Projeto**
 
@@ -82,7 +83,7 @@ Com o ambiente virtual ativado e as dependências instaladas, execute o seu cód
 
     python projeto1.py
 
-Isso irá rodar o programa conforme o que está no arquivo `projeto1.py`.
+Isso irá rodar o programa conforme o que está no arquivo `projeto1.py` e criará um novo arquivo `cliques.gif` na pasta do projeto.
 
 ### 5. **Fechar o Ambiente Virtual**
 
@@ -97,6 +98,6 @@ Isso irá sair do ambiente virtual e retornar ao terminal normal.
 Este projeto explorou diversas funcionalidades para analisar e visualizar uma rede social de golfinhos, representada como um grafo não direcionado. Entre as principais realizações, destacam-se:
 1. O cálculo do grau de cada vértice e dos coeficientes de aglomeração, oferecendo uma análise detalhada das conexões e agrupamentos no grafo.
 2. A identificação e exibição de todos os cliques maximais, fornecendo uma visão clara dos subconjuntos completamente conectados na rede.
-3. A geração de um GIF animado, cliques.gif, que permite a visualização sequencial dos cliques maximais no grafo. Essa funcionalidade facilita a interpretação visual das estruturas do grafo e suas inter-relações.
+3. A geração de um GIF animado, "cliques.gif", que permite a visualização sequencial dos cliques maximais no grafo. Essa funcionalidade facilita a interpretação visual das estruturas do grafo e suas inter-relações.
 
 A partir do projeto foi possível realizar estudos mais aprofundados sobre grafos e suas aplicações em redes complexas. Além disso, a inclusão de visualizações interativas agrega valor ao entendimento dos dados analisados.
