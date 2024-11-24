@@ -2,6 +2,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
 import imageio.v2 as imageio
+import tempfile
 import os
 
 # Função para ler o arquivo .mtx e extrair o número de nós e lista de arestas
@@ -107,26 +108,27 @@ def criar_gif_cliques(G, pos, cliques, output_gif="cliques.gif", final_frame="fi
     images = []
     node_colors = {node: "lightblue" for node in G.nodes}  # Cor inicial de todos os nós
 
-    # Adiciona os cliques em sequência, mantendo as cores anteriores
-    for i, clique in enumerate(cliques):
-        # Para cada clique, define a cor para os nós pertencentes a esse clique
-        for node in clique:
-            node_colors[node] = colors[i]  # Atribui a cor do clique atual ao nó
+    # Cria um diretório temporário para armazenar os frames
+    with tempfile.TemporaryDirectory() as temp_dir:
+        # Adiciona os cliques em sequência, mantendo as cores anteriores
+        for i, clique in enumerate(cliques): 
+            # Para cada clique, define a cor para os nós pertencentes a esse clique
+            for node in clique:
+                node_colors[node] = colors[i]  # Atribui a cor do clique atual ao nó
 
-        plt.figure()
-        # Desenha o grafo com os nós coloridos conforme os cliques já processados
-        node_color_list = [node_colors[node] for node in G.nodes]
-        nx.draw(G, pos, with_labels=True, node_color=node_color_list, edge_color="gray", node_size=500, font_size=10)
+            plt.figure()
+            # Desenha o grafo com os nós coloridos conforme os cliques já processados
+            node_color_list = [node_colors[node] for node in G.nodes]
+            nx.draw(G, pos, with_labels=True, node_color=node_color_list, edge_color="gray", node_size=500, font_size=10)
 
-        # Salva o frame temporário
-        frame_path = f"/tmp/frame_{i}.png"
-        plt.savefig(frame_path)
-        images.append(imageio.imread(frame_path))  # Adiciona a imagem ao GIF
-        os.remove(frame_path)  # Remove o arquivo temporário
-        plt.close()  # Fecha a figura para o próximo frame
+            # Salva o frame temporário no diretório criado
+            frame_path = os.path.join(temp_dir, f"frame_{i}.png")
+            plt.savefig(frame_path)
+            images.append(imageio.imread(frame_path))  # Adiciona a imagem ao GIF
+            plt.close()  # Fecha a figura para o próximo frame
 
-    # Salva o GIF
-    imageio.mimsave(output_gif, images, duration=3.0)
+        # Salva o GIF
+        imageio.mimsave(output_gif, images, duration=3.0)
 
 # Leitura do arquivo e construção do grafo
 arquivo_mtx = "soc-dolphins.mtx"
